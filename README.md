@@ -1,3 +1,5 @@
+此fork添加了bitcode支持，并提供了一个简单的安装脚本。此代码库并不覆盖cocos2d-x/external中全部的依赖，只有预编译的库。不在其中的请使用https://github.com/cocos2d/cocos2d-x-3rd-party-libs-bin 中的文件。
+
 cocos2d-x 3rd party libs
 ========================
 
