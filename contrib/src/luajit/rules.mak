@@ -36,7 +36,7 @@ ifeq ($(MY_TARGET_ARCH),i386)
 LUAJIT_HOST_CC="gcc -m32 $(OPTIM)"
 endif
 
-LUAJIT_TARGET_FLAGS="-isysroot $(IOS_SDK) -Qunused-arguments $(EXTRA_CFLAGS) $(EXTRA_LDFLAGS) $(ENABLE_BITCODE)"
+LUAJIT_TARGET_FLAGS="-isysroot $(IOS_SDK) -Qunused-arguments $(EXTRA_CFLAGS) $(EXTRA_LDFLAGS) $(ENABLE_BITCODE) -DLJ_NO_SYSTEM=1"
 LUAJIT_CROSS_HOST=$(xcrun cc)
 endif #endof HAVE_IOS
 
